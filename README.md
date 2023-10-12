@@ -1,48 +1,77 @@
-LiveCoding
+**Exercise N1: Automate Signin API to obtain an Authentication Token. After getting the token automate account API**
 
-**Exercise N1: Automate Signi API to Obtain an Authentication Token. Automate account API**
+*Objective: Your task is to write a program that automates the Account API which returns user information.*
 
-Objective: Your task is to write a program that automates the Signi API to obtain an authentication token.
+*Instructions:*
 
-Instructions:
+*You need to automate the process of obtaining an authentication token from the Signi API, create a function or class for this task to make it modular and reusable.*
 
-You need to automate the process of obtaining an authentication token from the Signi API.
-
-The Signi API endpoint for token retrieval is: https://eeapi.qa.benivo.com/user/Signin
+*The Signi API endpoint for token retrieval is: https://eeapi.qa.benivo.com/user/Signin*
 
 You must make a POST request to this endpoint with the following parameters in the request body:
 
-Email: Will be provided during the interview
-Password: Will be provided during the interview
-PartnerURLName: This should be "AutomationTest"
-TimeZoneNameIANA: Should be "Asia/Yerevan"
+*Email: Will be provided during the interview*
+
+*Password: Will be provided during the interview*
+
+*PartnerURLName: This should be "AutomationTest"*
+
+*TimeZoneNameIANA: Should be "Asia/Yerevan"*
 
 
-Requirements:
+*After getting response from Singin API you will get a response with the following properties: *
+*Status*
 
-Use the C# programming language to automate the API
-Use an HTTP client library to make the API request.
-Create a function or class for this task to make it modular and reusable.
+*Token*
 
-Deliverables:
+*HasError*
 
-The code you have written to automate the Signi API and obtain the token.
+*AccessToken*
+
+*The next step is to automate Account API using token property received from SignIn API and giving it as a header for Account API*
+
+*The Account API endpoint is: https://api.qa.benivo.com/v3/api/account*
+
+*You must make a GET request to this endpoint providing the token as a header*
+
+*Requirements:*
+
+*Use the C# programming language to automate the API*
+
+*Use an HTTP client library to make the API request.*
+
+*Create a function or class for this task to make it modular and reusable.*
+
+*Deliverables:*
+
+*The code you have written to automate the Signi API and obtain the token.*
 
 
-**Exercise N2: Automate Signi flow with the help of Selenium WebDriver
-
-Objective: Your task is to write a program that automates the login flow of the provided application
-
-Instructions:
-
-You need to automate the process of logging in.
 
 
-You must open a browser, redirect to "https://automationtest.qa.benivo.com" and use the credentials to login
 
-Email: Will be provided during the interview
-Password: Will be provided during the interview
+**Exercise N2: Automate Signin flow with the help of Selenium WebDriver**
 
-Deliverables:
+*Objective: Your task is to write a program that automates the login flow of the provided application (https://automationtest.qa.benivo.com), create a function or class for this task to make it modular and reusable.*
 
-The code you have written to automate the Login flow
+*Instructions:*
+
+*You need to automate the process of logging in with the help of Selenium WebDriver, try to use POM model*
+
+*You must open a browser, redirect to "https://automationtest.qa.benivo.com" and use the credentials to login*
+
+*Email: Will be provided during the interview*
+*Password: Will be provided during the interview*
+
+*Deliverables:*
+
+*The code you have written to automate the Login flow*
+
+
+**Exercise N3: Automate cookie accpet logic using shadow rooting**
+
+*Objective: Your task is to click Accept cookies button in the provided application*
+
+*Deliverables:*
+
+*The code you have written to automate the Signi API and obtain the token.*
